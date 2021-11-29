@@ -1,0 +1,19 @@
+{% for stat in stats %}
+{{ stat }}
+{% endfor %}
+
+Base = declarative_base()
+
+{% for class in classes %}
+class {{ class_name }}(Base):
+    __tablename__ = '{{ table_name }}'
+
+{% for column in columns %}
+    {{ column }}
+{% endfor %}
+
+{% for relationship in relationships %}
+    {{ relationship }}
+{% endfor %}
+
+{% endfor %}

@@ -1,0 +1,17 @@
+Table user {
+  id int [pk, not null]
+  full_name varchar
+  email varchar [unique, not null]
+  hashed_password varchar [not null]
+  is_active boolean
+  is_superuser boolean
+}
+
+Table item {
+  id int [pk, not null]
+  title varchar
+  description varchar
+  owner_id int
+}
+
+Ref: item.owner_id > user.id
