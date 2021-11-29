@@ -55,7 +55,7 @@ def generate_dbml_file(tables: Iterator[Table], output: Optional[Path]) -> None:
             std_console = Console()
             std_console.print(
                 f"{exc.args[0]} is not supported.",
-                "Please fill an issue on https://github.com/Kludex/sqlalchemy-dbml.",
+                "Please fill an issue on https://github.com/Kludex/dbml.",
             )
             raise SystemExit(1)
 

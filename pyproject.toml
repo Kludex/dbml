@@ -1,12 +1,12 @@
 [tool.poetry]
-name = "sqlalchemy-dbml"
+name = "dbml"
 version = "0.1.0"
 description = "Convert SQLAlchemy/SQLModel into DBML, and the other way around! 🎉"
 authors = ["Marcelo Trylesinski <marcelotryle@gmail.com>"]
 license = "MIT"
 readme = "README.md"
-repository = "https://github.com/Kludex/sqlalchemy-dbml"
-include = ["sqlalchemy_dbml/py.typed"]
+repository = "https://github.com/Kludex/dbml"
+include = ["dbml/py.typed"]
 
 classifiers = [
     "Topic :: Software Development :: Libraries :: Python Modules",
@@ -22,7 +22,7 @@ classifiers = [
 ]
 
 [tool.poetry.scripts]
-dbml = "sqlalchemy_dbml.main:app"
+dbml = "dbml.main:app"
 
 [tool.poetry.dependencies]
 python = "^3.8"

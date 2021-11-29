@@ -4,8 +4,8 @@ from typing import Optional
 from sqlalchemy import MetaData
 from typer import Argument, Option, Typer
 
-from sqlalchemy_dbml.generate_dbml import generate_dbml_file
-from sqlalchemy_dbml.importer import import_from_string
+from dbml.generate_dbml import generate_dbml_file
+from dbml.importer import import_from_string
 
 app = Typer()
 

@@ -1,25 +1,25 @@
 <h1 align="center">
-    <strong>sqlalchemy-dbml</strong>
+    <strong>dbml</strong>
 </h1>
 <p align="center">
-    <a href="https://github.com/Kludex/sqlalchemy-dbml" target="_blank">
-        <img src="https://img.shields.io/github/last-commit/Kludex/sqlalchemy-dbml" alt="Latest Commit">
+    <a href="https://github.com/Kludex/dbml" target="_blank">
+        <img src="https://img.shields.io/github/last-commit/Kludex/dbml" alt="Latest Commit">
     </a>
-        <img src="https://img.shields.io/github/workflow/status/Kludex/sqlalchemy-dbml/Test">
-        <img src="https://img.shields.io/codecov/c/github/Kludex/sqlalchemy-dbml">
+        <img src="https://img.shields.io/github/workflow/status/Kludex/dbml/Test">
+        <img src="https://img.shields.io/codecov/c/github/Kludex/dbml">
     <br />
-    <a href="https://pypi.org/project/sqlalchemy-dbml" target="_blank">
-        <img src="https://img.shields.io/pypi/v/sqlalchemy-dbml" alt="Package version">
+    <a href="https://pypi.org/project/dbml" target="_blank">
+        <img src="https://img.shields.io/pypi/v/dbml" alt="Package version">
     </a>
-    <img src="https://img.shields.io/pypi/pyversions/sqlalchemy-dbml">
-    <img src="https://img.shields.io/github/license/Kludex/sqlalchemy-dbml">
+    <img src="https://img.shields.io/pypi/pyversions/dbml">
+    <img src="https://img.shields.io/github/license/Kludex/dbml">
 </p>
 
 
 ## Installation
 
 ``` bash
-pip install sqlalchemy-dbml
+pip install dbml
 ```
 
 ## Usage

@@ -1,5 +1,5 @@
-import sqlalchemy_dbml
+import dbml
 
 
 def test_version():
-    assert sqlalchemy_dbml.__version__ == "0.1.0"
+    assert dbml.__version__ == "0.1.0"

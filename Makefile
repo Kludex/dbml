@@ -14,24 +14,24 @@ install:  ## Install package
 .PHONY: lint
 lint:  ## Linter the code.
 	@echo "🚨 Linting code"
-	poetry run isort sqlalchemy_dbml tests --check
-	poetry run flake8 sqlalchemy_dbml tests
-	poetry run mypy sqlalchemy_dbml
-	poetry run black sqlalchemy_dbml tests --check --diff
+	poetry run isort dbml tests --check
+	poetry run flake8 dbml tests
+	poetry run mypy dbml
+	poetry run black dbml tests --check --diff
 
 
 .PHONY: format
 format:
 	@echo "🎨 Formatting code"
-	poetry run isort sqlalchemy_dbml tests
-	poetry run autoflake --remove-all-unused-imports --recursive --remove-unused-variables --in-place sqlalchemy_dbml tests --exclude=__init__.py
-	poetry run black sqlalchemy_dbml tests
+	poetry run isort dbml tests
+	poetry run autoflake --remove-all-unused-imports --recursive --remove-unused-variables --in-place dbml tests --exclude=__init__.py
+	poetry run black dbml tests
 
 
 .PHONY: test
 test:  ## Test your code.
 	@echo "🍜 Running pytest"
-	poetry run pytest tests/ --cov=sqlalchemy_dbml --cov-report=term-missing:skip-covered --cov-report=xml --cov-fail-under 100
+	poetry run pytest tests/ --cov=dbml --cov-report=term-missing:skip-covered --cov-report=xml --cov-fail-under 100
 
 
 .PHONY: publish
