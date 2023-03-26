@@ -2,28 +2,9 @@ from pathlib import Path
 from typing import Dict, Iterator, List, Literal, Optional, TypedDict
 
 from rich.console import Console
-from sqlalchemy.sql.schema import ForeignKey, Table
-from sqlalchemy.sql.sqltypes import DATETIME, BigInteger, Boolean, Date, DateTime, Enum
-from sqlalchemy.sql.sqltypes import Integer, LargeBinary, SmallInteger, String, Text
-from sqlalchemy.sql.sqltypes import Time
-from sqlmodel.sql.sqltypes import AutoString
+from sqlalchemy.sql.schema import Table
 
-SQLALCHEMY_TO_DBML = {
-    Boolean: "boolean",
-    Date: "date",
-    DateTime: "datetime",
-    Integer: "int",
-    String: "varchar",
-    SmallInteger: "int",  # Is there a different one here?
-    LargeBinary: "binary",
-    Enum: "enum",
-    Time: "time",
-    Text: "text",
-    ForeignKey: "foreign_key",
-    BigInteger: "bigint",
-    DATETIME: "datetime",
-    AutoString: "varchar",
-}
+from dbml.constants import SQLALCHEMY_TO_DBML
 
 
 class FieldInfo(TypedDict):
